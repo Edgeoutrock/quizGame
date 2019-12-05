@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Planets Trivia Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class = "Sun">
+    <section id = "Fun" >
+    <H1>Instructions:</H1>
+    <p>
+      There are five teams. Each person can obly be on one team and there can be no more than 5 people on a team. A team or teams with the most answers correct can be added to list when the quiz is over.
+      Use a check for a correct answer and an x for an incorrect answer.
+    </p>
+    </section>
+    <button id ="moreFun" onClick="onClickShow()"> Click to show </button>  
+    <button id ="lessFun" onClick="onClickHide()"> Click to hide </button>
+  </div>
+<div class="container">
+	<header id="title">
+		Planets Trivia Game
+	</header>
+	<section id="game-area">
+		<header id="question"></header>
+		<section id="answers"></section>
+		<img id="question-image" src="" alt="question-image">
+		<section id="timer">Time remaining: <span id="countdown"></span> seconds</section>
+	</section>
+	<section id="result-area" class="hidden"></section>
+	</section>
+	<section id="end-screen" class="hidden">
+		<h2>Game Over!</h2>
+		<h4 id="right-answers"></h4>
+		<h4 id="wrong-answers"></h4>
+		<h4 id="percent-right"></h4>
+        <button id="restart-button">Restart</button>
+        <section>
+            <form>
+            <h1>Teams</h1>
+            <ul id="grocery-list">
+              <li id="0" >
+                Team 1 <button>Add to List</button>
+              </li>
+              <li id="1">
+                Team 2 <button>Add to List</button>
+              </li>
+              <li id="2">
+                Team 3 <button>Add to List</button>
+              </li>
+              <li id="3">
+                Team 4 <button>Add to List</button>
+              </li>
+              <li id="4">
+                Team 5 <button>Add to List</button>
+              </li>
+            </ul>
+          </form>
+      
+          <h2>Victors</h2>
+          <div id="shopping-cart">
+      
+          </div>
+        </section>
+    </section>
+
+    
+    
+    
+    
+</div>
+</body>
+</html>
